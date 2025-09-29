@@ -4,7 +4,6 @@ using fluentvalidationtestplayground.Validators.Customer;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateCustomerValidator>().AddControllersWithViews()
     .AddViewLocalization();
 
